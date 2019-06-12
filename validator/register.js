@@ -30,10 +30,10 @@ module.exports = function ValidateRegisterInput(data) {
       "Password can't be less than 6 or more than 30 characters";
   }
   if (Validator.isEmpty(data.password2)) {
-    errors.password = "Password confirmation is required";
+    errors.password2 = "Password confirmation is required";
   }
   if (!Validator.equals(data.password, data.password2)) {
-    errors.password = "Passwords don't match";
+    errors.password2 = "Passwords don't match";
   }
 
   return {
