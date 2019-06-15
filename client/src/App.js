@@ -14,17 +14,19 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Route exact path="/" component={Landing} />
-          <div className="container">
-            <Route exact path="/Register" component={Register} />
-            <Route exact path="/Login" component={Login} />
+      <Provider store={store}>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <Route exact path="/" component={Landing} />
+            <div className="container">
+              <Route exact path="/Register" component={Register} />
+              <Route exact path="/Login" component={Login} />
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      </Router>
+        </Router>
+      </Provider>
     );
   }
 }
