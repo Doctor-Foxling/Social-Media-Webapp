@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import image1 from "../../img/script1.png";
+import ReactImageMagnify from "react-image-magnify";
 
 class Landing extends Component {
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
   render() {
     return (
       <div className="landing">
@@ -26,6 +35,22 @@ class Landing extends Component {
                   Login
                 </Link>
               </div>
+              <ReactImageMagnify
+                {...{
+                  smallImage: {
+                    alt: "Wristwatch by Ted Baker London",
+                    width: 100,
+                    height: 150,
+                    isFluidWidth: true,
+                    src: image1
+                  },
+                  largeImage: {
+                    src: image1,
+                    width: 200,
+                    height: 300
+                  }
+                }}
+              />
             </div>
           </div>
         </div>
@@ -34,4 +59,12 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+Landing.propTypes = {
+  auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(mapStateToProps)(Landing);
