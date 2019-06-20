@@ -10,6 +10,8 @@ import Footer from "./components/layout/Footer";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Dashboard from "./components/dashboard/Dashboard";
+import CreateProfile from "./components/create-profile/CreateProfile";
+import EditProfile from "./components/edit-profile/EditProfile";
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -54,6 +56,22 @@ class App extends Component {
               <Switch>
                 {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              </Switch>
+              <Switch>
+                {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
+                <PrivateRoute
+                  exact
+                  path="/create-profile"
+                  component={CreateProfile}
+                />
+              </Switch>
+              <Switch>
+                {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
+                <PrivateRoute
+                  exact
+                  path="/edit-profile"
+                  component={EditProfile}
+                />
               </Switch>
             </div>
             <Footer />
