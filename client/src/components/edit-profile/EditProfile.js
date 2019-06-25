@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom"; // this is needed for the history argument in createProfile prop func to work
+import { withRouter, Link } from "react-router-dom"; // this is needed for the history argument in createProfile prop func to work
 
 import PropTypes from "prop-types";
 import TextFieldGroup from "../common/TextFieldGroup";
@@ -199,6 +199,9 @@ class CreateProfile extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
+              <Link to="/dashboard" className="btn btn-light">
+                Go back
+              </Link>
               <h1 className="text-center display-4">Edit Profile</h1>
               <small className="d-block pb-3">* = Required Fields</small>
               <form onSubmit={this.onSubmit}>

@@ -251,7 +251,7 @@ router.post(
     }
 
     profileFields.social = {};
-    if (req.body.Youtube) profileFields.social.Youtube = req.bodY.Youtube;
+    if (req.body.Youtube) profileFields.social.Youtube = req.body.Youtube;
     if (req.body.Facebook) profileFields.social.Facebook = req.body.Facebook;
     if (req.body.Instagram) profileFields.social.Instagram = req.body.Instagram;
     if (req.body.Twitter) profileFields.social.Twitter = req.body.Twitter;
