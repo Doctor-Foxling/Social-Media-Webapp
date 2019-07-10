@@ -10,10 +10,17 @@ class Profiles extends Component {
     this.props.getProfiles();
   }
 
+  // async componentDidMount() {
+  //   const response = await Axios.get("/api/profile/all");
+  //   const toDoItems = response.data;
+  //   // this.setState({toDoItems: toDoItems}) // or this.setState({toDoItems})
+  //   console.log(toDoItems);
+  //   console.log("this is cool but...");
+  // }
+
   render() {
     const { profiles, loading } = this.props.profile;
     let profileItems;
-
     if (profiles === null || loading) {
       profileItems = <Spinner />;
       console.log("Profile null error");
@@ -26,7 +33,6 @@ class Profiles extends Component {
         profileItems = <h4>No Profiles Found.....</h4>;
       }
     }
-
     return (
       <div className="profiles">
         <div className="container">

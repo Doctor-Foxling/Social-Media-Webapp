@@ -15,10 +15,6 @@ img {
   margin-bottom: -50px;
 }
 
-.script1 {
-  background: url("./img/script1.png") no-repeat;
-}
-
 .awesomeness {
   font-size: 0.5em;
   color: orange;
@@ -48,4 +44,55 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+@media (min-width: 144px) {
+  .display-4 {
+    font-size: 14px;
+  }
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 244px) {
+  .display-4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 544px) {
+  .display-4 {
+    font-size: 25px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .display-4 {
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 48px;
+  }
 }
