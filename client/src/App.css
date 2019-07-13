@@ -3,6 +3,11 @@ img {
 }
 
 .App {
+  background-color: beige;
+}
+
+.post-style {
+  background-color: rgb(87, 94, 75);
 }
 
 .landing {

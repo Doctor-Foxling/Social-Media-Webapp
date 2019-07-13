@@ -16,6 +16,8 @@ import AddExperience from "./components/add-credentials/AddExperience";
 import AddEducation from "./components/add-credentials/AddEducation";
 import Profiles from "./components/profiles/Profiles";
 import Profile from "./components/profile/Profile";
+import Posts from "./components/posts/Posts";
+import Post from "./components/post/Post";
 import NotFound from "./components/notFound/NotFound";
 
 import { Provider } from "react-redux";
@@ -61,6 +63,7 @@ class App extends Component {
               <Route exact path="/Login" component={Login} />
               <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/profile/:handle" component={Profile} />
+              <Route exact path="/profile/user/:id" component={Profile} />
               <Switch>
                 {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -96,6 +99,14 @@ class App extends Component {
                   path="/add-education"
                   component={AddEducation}
                 />
+              </Switch>
+              <Switch>
+                {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
+                <PrivateRoute exact path="/feed" component={Posts} />
+              </Switch>
+              <Switch>
+                {/* Switch from react-router-dom is wrapped around PrivateRoute to prevent redirection issues */}
+                <PrivateRoute exact path="/post/:id" component={Post} />
               </Switch>
               <Route exact path="/not-found" component={NotFound} />
             </div>

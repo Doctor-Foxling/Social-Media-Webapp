@@ -10,18 +10,22 @@ import ProfileHeader from "./ProfileHeader";
 import Spinner from "../common/Spinner";
 
 import { getProfileByHandle } from "../../actions/profileActions";
+import { getProfileById } from "../../actions/profileActions";
 
 class Profile extends Component {
   componentDidMount() {
     if (this.props.match.params.handle) {
       this.props.getProfileByHandle(this.props.match.params.handle);
+      console.log(`the handle param is ${this.props.match.params.handle}`);
+    } else if (this.props.match.params.id) {
+      this.props.getProfileById(this.props.match.params.id);
+      console.log(`the id param is ${this.props.match.params.id}`);
     }
   }
 
-  componentWillReceiveProps(nextProps){
-    if(nextProps.profile.profile === null && this.props.profile.loading)
-    {
-      this.props.history.push('not-found');
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.profile.profile === null && this.props.profile.loading) {
+      this.props.history.push("/not-found");
     }
   }
 
@@ -68,6 +72,7 @@ class Profile extends Component {
 
 Profile.propTypes = {
   getProfileByHandle: PropTypes.func.isRequired,
+  getProfileById: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired
 };
 
@@ -77,5 +82,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getProfileByHandle }
+  { getProfileByHandle, getProfileById }
 )(Profile);

@@ -31,7 +31,7 @@ require("./config/passport")(passport); // passing in passport itself
 // Use Routes
 app.use("/api/users", users);
 app.use("/api/profile", profile);
-app.use("/api/post", posts);
+app.use("/api/posts", posts);
 
 const port = process.env.PORT || 5000; // when deploying to heroku, 'process.env.PORT' is required else 5000 is used when running locally
 
