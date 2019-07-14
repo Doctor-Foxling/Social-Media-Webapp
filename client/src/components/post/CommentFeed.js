@@ -10,7 +10,6 @@ class CommentFeed extends Component {
       return comments.map(comment => (
         <CommentItem key={comment._id} postId={postId} comment={comment} />
       ));
-      console.log(`the length of the array is ${comments.length}`);
     }
 
     return feedContent;
