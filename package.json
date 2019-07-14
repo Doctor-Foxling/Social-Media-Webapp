@@ -9,7 +9,7 @@
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server1\" \"npm run client\"",
-    "heroku-postbuild": "cd client && NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "heroku-postbuild": "SET NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "author": "Hamza Khan",
   "license": "ISC",
