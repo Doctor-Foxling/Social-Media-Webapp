@@ -10,4 +10,12 @@ The app is hosted on Heroku web-hosting platform: https://foxlings-furnace.herok
 
 The Web-app provides the ability to create your own account, store your data, comment on a thread, comment on other peoples comments, view other people's profiles, etc.
 
+## Skills gained
+
+The skills gained as part of working on this project were:
+
+<ul>
+  <li>f</li>  
+</ul>
+
 
