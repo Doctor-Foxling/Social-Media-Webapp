@@ -24,20 +24,21 @@ The skills gained as part of working on this project were:
 </ul>
 
 ## Screenshots
-
-<h5>Homepage</h5>
+><h4>Homepage</h4>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Homepage.PNG">
-
-<h5>User Profiles</h5>
+_______________________________________________________________________________________________________
+<h4>User Profiles</h4>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Developer%20Profiles.PNG">
+_______________________________________________________________________________________________________
 <h5>A User Profile</h5>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Developer_profile_1.PNG">
+_______________________________________________________________________________________________________
 <h5>A Comment Thread</h5>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Comment_Thread.PNG">
+_______________________________________________________________________________________________________
 <h5>Comment on a comment</h5>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Comment_Thread1.PNG">
+_______________________________________________________________________________________________________
 <h5>Dashboard of the logged in profile</h5>
 <img src="https://github.com/Doctor-Foxling/Node-React_based_webapp/blob/master/Readme/Dashboard.PNG">
-
-
 
