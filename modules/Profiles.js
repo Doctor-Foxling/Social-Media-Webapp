@@ -59,7 +59,7 @@ const ProfileSchema = new Schema({
         default: false
       },
       description: {
-        tpye: String
+        type: String
       }
     }
   ],
