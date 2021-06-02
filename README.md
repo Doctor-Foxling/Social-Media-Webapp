@@ -16,7 +16,7 @@ The skills gained as part of working on this project were:
 
 <ul>
   <li>Learned React.js Framework</li>
-  <li>Learned Node.js and the development of a backend API using Node.js that is fully functional, manages all the web-app data and stores it on a database, handles all the security aspects of and password authentication, Easily deployable etc.</li>
+  <li>Learned Node.js and the development of a backend API using Node.js that is fully functional, manages all the web-app data and stores it on a database, handles all the security aspects of app and password authentication, Easily deployable etc.</li>
   <li>Learned the Redux state management system and its integration with React</li>
   <li>Learned No-SQL MongoDB database management</li>
   <li>Improved javascript skills and the new es6 features</li>
